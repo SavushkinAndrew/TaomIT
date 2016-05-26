@@ -5,7 +5,6 @@
 	
 	if (isset($_SESSION['sess_login']) && isset($_SESSION['sess_pass'])) {
 
-			
 		header('Location: pages/news.html');
 			
 		exit();
@@ -30,7 +29,7 @@
 
 					$_SESSION['sess_pass'] = $_POST['passw'];
 
-					header('Location: pages/news.html');
+					header('Location: pages/news.php');
 
 					exit();
 		  
@@ -62,7 +61,7 @@
 
 					$_SESSION['sess_pass'] = $_POST['reg_password'];
 
-					header('Location: pages/news.html');
+					header('Location: pages/news.php');
 
 					exit();
 		}

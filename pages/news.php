@@ -1,6 +1,19 @@
-﻿<?php 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	Новости
+	
+	<form action="../php/logout.php" method="POST">
+	<button  action type="submit" value="Войти" class="login__btn">Выйти</button>
+	</form>
+	
+ <?php 
 
-	include "func.inc";
+	include "../php/func.inc";
 	conect_DB();
 	
 	$sql=mysql_query("SELECT * FROM `teacher` INNER JOIN `news` ON `teacher`.`id_teacher` = `news`.`id_teacher`");
@@ -31,7 +44,7 @@
 
 		print("<p>"); 
 		print("$context <br>");
-		print("<form action=\"../pages/news.php\" method=post>");
+		print("<form action=\"description.php\" method=post>");
 		print("<input type=hidden name=\"id_news\" value=$id_news>");
 		print("<input type=\"submit\" value=\"Читать полностью\"/>");
 		print("</form>");
@@ -45,3 +58,6 @@
 	}
 ?>
 
+
+</body>
+</html>
