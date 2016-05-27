@@ -3,15 +3,6 @@
 	
 	require_once('php/data.php');
 	
-	if (isset($_SESSION['sess_login']) && isset($_SESSION['sess_pass'])) {
-
-			
-		header('Location: pages/news.html');
-			
-		exit();
-
-   }
-	
 	$sql=mysql_query("SELECT id_user,name,password FROM users");
 		
 		$err = '';
@@ -30,7 +21,7 @@
 
 					$_SESSION['sess_pass'] = $_POST['passw'];
 
-					header('Location: pages/news.html');
+					header('Location: pages/mainscreen.php');
 
 					exit();
 		  
@@ -62,7 +53,7 @@
 
 					$_SESSION['sess_pass'] = $_POST['reg_password'];
 
-					header('Location: pages/news.html');
+					header('Location: pages/news.php');
 
 					exit();
 		}
