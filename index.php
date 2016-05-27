@@ -5,6 +5,10 @@
 	
 	if (isset($_SESSION['sess_login']) && isset($_SESSION['sess_pass'])) {
 
+<<<<<<< HEAD
+=======
+			
+>>>>>>> html
 		header('Location: pages/news.html');
 			
 		exit();
@@ -29,7 +33,11 @@
 
 					$_SESSION['sess_pass'] = $_POST['passw'];
 
+<<<<<<< HEAD
 					header('Location: pages/news.php');
+=======
+					header('Location: pages/news.html');
+>>>>>>> html
 
 					exit();
 		  
@@ -61,7 +69,11 @@
 
 					$_SESSION['sess_pass'] = $_POST['reg_password'];
 
+<<<<<<< HEAD
 					header('Location: pages/news.php');
+=======
+					header('Location: pages/news.html');
+>>>>>>> html
 
 					exit();
 		}
