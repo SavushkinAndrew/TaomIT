@@ -40,7 +40,11 @@
 
 		print("<h2>$title</h2>");
 
-		print("<img src=\"http://cs543104.vk.me/v543104766/ef18/UAfy-frPW24.jpg\" />"); 
+		if(isset($image)){
+					print("<img src=\"$image\" />"); 
+		}else{
+			//TODO:Добавть плейс холдер
+		}
 
 		print("<p>"); 
 		print("$context <br>");

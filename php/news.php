@@ -7,7 +7,6 @@
 	
 	$err = '';
 	
-	
 	while ($row = mysql_fetch_array($sql)) {
 		
 		$sql_user=mysql_query("SELECT * FROM `users` INNER JOIN `teacher` ON `users`.`id_user` = `teacher`.`user`");
