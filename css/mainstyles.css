@@ -1,0 +1,138 @@
+body{
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+.nav-side{
+	font-weight: 600;
+	position: fixed;
+	height: 100%;
+	width: 25%;
+	max-width: 100%;
+	background-color: #060d12;
+	box-sizing: border-box;
+	padding: 20px;
+	color: white;
+	margin-left: -20%;
+	transition: margin 500ms ease-in-out;
+}
+.nav-side.nav-open{
+	margin-left: 0;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .1); 
+}
+.nav-toggle{
+	position: inherit;
+	right: 0px;
+	top: 50px;
+	width: 50px;
+	height: 50px;
+	background: #060d12;
+	line-height: 40px;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 4px 5px 10px rgba(0, 0, 0, .1); 
+	transition: all 500ms;
+}
+.nav-toggle:before {
+	font-weight: 600;
+	color: white;
+}
+.nav-toggle:hover{
+	padding: 5px;
+	transition: all 500ms;
+}
+.nav-side.nav-open .nav-toggle:before{
+
+}
+
+li {
+	margin:7px;
+	text-align: center;
+	border-bottom: 1px solid;
+	padding: 15px;
+    list-style-type: none;
+    transition: all 500ms;
+   }
+   ul {
+   	margin-top: 11%;
+    margin-left: 0;
+    padding-left: 0;
+   }
+li:hover{
+	text-align: center;
+	border-bottom: 1px solid;
+	padding: 20px;
+    list-style-type: none;
+
+}
+a{
+	color: white;
+	text-decoration: none;
+	list-style: none;
+}
+#photo:hover{
+	opacity: 0.6;
+	transition: all 500ms;
+
+}
+p{
+	text-align: center;
+	text-transform: uppercase;
+}
+#photo{
+	display: block;
+	margin:10% auto;
+	margin-top: -12%;
+}
+img{
+	display: inline-block;
+	border-radius: 50%;
+	width: 8em;
+	height: 8em;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 5);
+	transition: all 300ms;
+}
+
+li svg{
+
+	float: right;
+}
+.cancel{
+
+	cursor: pointer;
+	box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 5);
+	position: relative;
+	color: black;
+	vertical-align: middle;
+	right: -96%;
+	margin: 0;
+	width: 30px;
+	height: 25px;
+	background-color: white;
+	border-radius: 50%;
+	transition: all 500ms ease-in-out;
+}
+.invis{
+	transform: rotate(360deg);
+	transition: all 1s;
+}
+
+hr{
+	margin: 0px;
+	margin-bottom: 5px;
+	width: 30px;
+	height: 10px;
+	border: 0;
+	border-radius: 30%;
+	color: black;
+	background-color: black;
+	height: 3px;
+}
+.sandwich :last-child{
+	margin-bottom: 0px;
+}
+.sandwich{
+	margin-top: 4px;
+}
+
